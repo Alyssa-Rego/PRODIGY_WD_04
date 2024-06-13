@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<title>Personal Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body {
+    background-color: #f5eff9;
+    font-family: "Montserrat", sans-serif;
+  }
+  .custom-padding-64 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .custom-light-grey {
+    background-color: #f0f0f0;
+  }
+  .header {
+    background: url('img_hbg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 200px 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(43, 12, 70);
+  }
+  .header img {
+    display: block;
+    margin: auto;
+    width: 60%;
+    border-radius: 50%;
+  }
+  .header .highlight {
+    color: white;
+  }
+  .about {
+    background-color: #d2bbf9;
+    padding: 64px 16px;
+    text-align: center;
+    margin-top: 64px;
+  }
+  .about h2 {
+    text-align: center;
+  }
+  .about-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .about-text {
+    flex: 1;
+    text-align: left;
+    max-width: 500px;
+    margin-right: 20px;
+  }
+  .about-text p {
+    margin: 0;
+    line-height: 1.5;
+  }
+  .about img {
+    width: 225px;
+    height: 290px;
+  }
+  .skills {
+    padding: 64px 16px;
+    text-align: center;
+  }
+  .skill-boxes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    justify-items: center;
+  }
+  .skill-box {
+    background-color: #e0d4f7;
+    padding: 16px;
+    border-radius: 8px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+  }
+  .courses {
+    background-color: #dda7ff;
+    padding: 64px 16px;
+    text-align: center;
+    margin-top: 64px;
+  }
+  .courses-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+  }
+  .course-item {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .course-item a {
+    text-decoration: none;
+  }
+  .course-item .custom-container {
+    width: 100%;
+  }
+  .projects {
+    background-color: #e6d4f1;
+    padding: 64px 16px;
+    text-align: center;
+  }
+  .project-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+  }
+  .project-item {
+    flex: 0 0 30%;
+    background-color: rgb(235, 222, 245);
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .project-item img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  .resume {
+    padding: 64px 16px;
+    text-align: center;
+    background-color: #b9a1d0;
+  }
+  .contact {
+    padding: 64px 16px;
+    text-align: center;
+  }
+  .footer {
+    padding: 64px 16px;
+    text-align: center;
+    background-color: #f1ddf7;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #3c3838;
+  }
+  .navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .navbar a:hover {
+    background-color: #b49fcb;
+    color: white;
+  }
+</style>
+<body>
+
+<div class="custom-bar navbar">
+  <a href="#home" class="custom-bar-item custom-button">Home</a>
+  <a href="#about" class="custom-bar-item custom-button">About</a>
+  <a href="#skills" class="custom-bar-item custom-button">Skills</a>
+  <a href="#courses" class="custom-bar-item custom-button">Courses</a>
+  <a href="#projects" class="custom-bar-item custom-button">Projects</a>
+  <a href="#resume" class="custom-bar-item custom-button">Resume</a>
+  <a href="#contact" class="custom-bar-item custom-button">Contact</a>
+</div>
+
+<div class="header" id="home">
+  <h2>Welcome to my portfolio!</h2>
+  <div class="header-content">
+    <p>I am</p>
+    <h1 class="custom-jumbo highlight"><b>Alyssa Diona Rego</b></h1>
+    <p>BCA(Honours/Honours with Research) Undergraduate Student</p>
+  </div>
+</div>
+
+<div class="custom-main">
+
+  <section class="about custom-padding-64" id="about">
+    <h2>About Me</h2>
+    <br><br>
+    <div class="custom-content about-content">
+      <div class="about-text">
+        <p>
+          I am Alyssa Diona Rego, currently pursuing my undergrad in Bachelors in Computer Applications [ BCA (Honours/Honours with Research)] in Christ University Bangalore.
+          I am a proactive and hard working individual with highlight on meeting tasks with attention to detail and patience.  Provides encouragement, support and comfort to my colleagues or who the concerned individual is when they require it. Optimized performance through efficient and precise methods. Committed to achieving goals and foster a supportive environment, emphasizes innovation to meet and exceed objectives.
+        </p>
+      </div>
+      <div>
+        <img src="img_me.jpg" alt="my Image">
+      </div>
+    </div>
+  </section>
+
+  <section class="skills custom-padding-64" id="skills">
+    <div class="custom-content">
+      <h2>Skills</h2>
+      <br>
+      <div class="skill-boxes">
+        <div class="skill-box">SQL</div>
+        <div class="skill-box">Full-Stack Development</div>
+        <div class="skill-box">C & C++</div>
+        <div class="skill-box">Python</div>
+        <div class="skill-box">JavaScript</div>
+        <div class="skill-box">CSS</div>
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">Bootstrap Framework</div>
+        <div class="skill-box">Editing</div>
+        <div class="skill-box">Microsoft Office</div>
+        <div class="skill-box">Data Entry</div>
+        <div class="skill-box">Persistence & Patience</div>
+        <div class="skill-box">Commitment</div>
+        <div class="skill-box">Performance Optimization</div>
+        <div class="skill-box">Volunteering</div>
+      </div>
+    </div>
+  </section>
+
+<section class="courses custom-padding-64" id="courses">
+  <div class="custom-content courses-content">
+    <h2 style="color: black;">Courses and Certifications</h2>
+    <br><br>
+    <div class="course-item">
+      <a href="certificate 2.pdf" target="_blank">
+        <div class="custom-container custom-center custom-padding-small" style="background-color: #64477a; color: white;">Data - Driven Storytelling and Visualization [L&T EduTech]</div>
+      </a>
+    </div>
+    <br>
+    <div class="course-item">
+      <a href="certificate 1.pdf" target="_blank">
+        <div class="custom-container custom-center custom-padding-small" style="background-color: #64477a; color: white;">Learning Relational Databases [Infosys Springboard]</div>
+      </a>
+    </div>
+    <br>
+    <div class="course-item">
+      <a href="certificate 3.png" target="_blank">
+        <div class="custom-container custom-center custom-padding-small" style="background-color: #64477a; color: white;">Java OOP: Understanding Inheritance and Polymorphism in Java [Skillsoft]</div>
+      </a>
+    </div>
+    <br>
+    <div class="course-item">
+      <a href="certificate 4.png" target="_blank">
+        <div class="custom-container custom-center custom-padding-small" style="background-color: #64477a; color: white;">Advanced Options and Responsive Web Design [Skillsoft]</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+  <section class="projects custom-padding-64" id="projects">
+    <div class="custom-content">
+      <h2>My Projects</h2>
+      <div class="project-container">
+        <div class="project-item">
+          <img src="img_p1.png" alt="Project 1">
+          <h3>Resort Website</h3>
+          <p>Designed a website for Luxe Haven Resort for first semester final.</p>
+        </div>
+        <div class="project-item">
+          <img src="img_p2.png" alt="Project 2">
+          <h3>Cafe Reservation Webpage</h3>
+          <p>Designed a webpage for a Cafe for reservations in second semester final.</p>
+        </div>
+        <div class="project-item">
+          <img src="img_p3.png" alt="Project 3">
+          <h3>Cafe Website</h3>
+          <p>Designed a website for Cafe Elixir for second semester final</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="resume custom-padding-64" id="resume">
+    <div class="custom-content">
+      <h2>Download Resume</h2>
+      <a href="Resume - Alyssa.pdf" class="custom-button custom-light-grey custom-padding-large">
+        <i class="fa fa-download"></i> Download Resume
+      </a>
+    </div>
+  </section>
+
+  <br><br><br><br>
+
+  <section class="contact custom-padding-64" id="contact">
+    <div class="custom-content">
+      <h2>Contact Me</h2>
+      <p><i class="fa fa-map-marker fa-fw custom-xxlarge custom-margin-right"></i>Koramangala Bangalore, Karnataka</p>
+      <p><i class="fa fa-phone fa-fw custom-xxlarge custom-margin-right"></i> Phone: +91 8861171868</p>
+      <p><i class="fa fa-envelope fa-fw custom-xxlarge custom-margin-right"></i> Email: alyssadrego@gmail.com</p>
+    </div>
+  </section>
+
+</div>
+
+<footer class="footer custom-padding-64" id="footer">
+</footer>
+</body>
+</html>
